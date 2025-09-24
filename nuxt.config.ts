@@ -2,15 +2,14 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: "2025-05-25",
-  future: {
-    compatibilityVersion: 4,
-  },
+  compatibilityDate: "2025-07-25",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
   app: {
     head: {
       htmlAttrs: {
@@ -21,4 +20,6 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon-32x32.png" }],
     },
   },
+
+  modules: ["@nuxt/fonts"],
 });
