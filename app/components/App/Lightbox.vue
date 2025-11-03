@@ -19,7 +19,7 @@ const selectedImage = ref<number>(props.initialImage || 1);
   >
     <div class="relative">
       <svg
-        class="text-theme-white hover:text-theme-orange absolute -top-12 right-0 size-6 cursor-pointer fill-current transition-colors delay-200"
+        class="absolute -top-12 right-0 size-6 cursor-pointer fill-current text-theme-white transition-colors delay-200 hover:text-theme-orange"
         @click="$emit('close')"
         role="button"
         aria-label="Close gallery"
@@ -38,7 +38,7 @@ const selectedImage = ref<number>(props.initialImage || 1);
       />
 
       <button
-        class="hover:text-theme-orange absolute -left-6 top-1/2 flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white shadow-lg transition-colors delay-200"
+        class="absolute top-1/2 -left-6 flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white shadow-lg transition-colors delay-200 hover:text-theme-orange"
         type="button"
         @click="selectedImage = selectedImage === 1 ? 4 : selectedImage - 1"
         :aria-label="`Go to image ${selectedImage === 1 ? 4 : selectedImage - 1} of 4`"
@@ -50,7 +50,7 @@ const selectedImage = ref<number>(props.initialImage || 1);
       </button>
 
       <button
-        class="hover:text-theme-orange absolute -right-6 top-1/2 flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white shadow-lg transition-colors delay-200"
+        class="absolute top-1/2 -right-6 flex size-12 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white shadow-lg transition-colors delay-200 hover:text-theme-orange"
         type="button"
         @click="selectedImage = selectedImage === 4 ? 1 : selectedImage + 1"
         :aria-label="`Go to image ${selectedImage === 4 ? 1 : selectedImage + 1} of 4`"
@@ -71,7 +71,7 @@ const selectedImage = ref<number>(props.initialImage || 1);
       >
         <div
           class="relative size-20 overflow-hidden rounded-xl"
-          :class="selectedImage === image.id ? 'border-theme-orange border-2' : ''"
+          :class="selectedImage === image.id ? 'border-2 border-theme-orange' : ''"
           @click="selectedImage = image.id"
           :aria-current="selectedImage === image.id ? 'true' : undefined"
         >

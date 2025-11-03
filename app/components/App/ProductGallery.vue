@@ -19,7 +19,7 @@ const isOpen = ref<boolean>(false);
         class="pointer-events-none h-[300px] w-full object-cover hover:cursor-pointer sm:pointer-events-auto sm:rounded-2xl lg:h-[445px]"
       />
       <button
-        class="hover:fill-theme-orange absolute left-4 top-1/2 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white p-2 sm:hidden"
+        class="absolute top-1/2 left-4 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white p-2 hover:fill-theme-orange sm:hidden"
         type="button"
         @click="selectedImage = selectedImage === 1 ? 4 : selectedImage - 1"
         :aria-label="`Previous image (${selectedImage === 1 ? 4 : selectedImage - 1} of 4)`"
@@ -41,7 +41,7 @@ const isOpen = ref<boolean>(false);
         </svg>
       </button>
       <button
-        class="hover:fill-theme-orange absolute right-4 top-1/2 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white p-2 sm:hidden"
+        class="absolute top-1/2 right-4 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white p-2 hover:fill-theme-orange sm:hidden"
         type="button"
         @click="selectedImage = selectedImage === 4 ? 1 : selectedImage + 1"
         :aria-label="`Next image (${selectedImage === 4 ? 1 : selectedImage + 1} of 4)`"
@@ -68,8 +68,8 @@ const isOpen = ref<boolean>(false);
         v-for="image in imageList"
         :key="image.id"
         :class="[
-          selectedImage === image.id ? 'border-theme-orange rounded-xl border-2' : '',
-          'md:size-30 cursor-pointer sm:mx-auto sm:size-24 lg:size-24',
+          selectedImage === image.id ? 'rounded-xl border-2 border-theme-orange' : '',
+          'cursor-pointer sm:mx-auto sm:size-24 md:size-30 lg:size-24',
         ]"
         :aria-current="selectedImage === image.id ? 'true' : undefined"
       >

@@ -27,16 +27,16 @@ const emit = defineEmits(["close"]);
 
 <template>
   <div
-    class="w-[360px] rounded-xl bg-white pb-8 pt-4 shadow-xl"
+    class="w-[360px] rounded-xl bg-white pt-4 pb-8 shadow-xl"
     role="dialog"
     aria-label="Shopping Cart"
     tabindex="-1"
   >
-    <h2 class="text-theme-very-dark-blue mb-7 px-6 font-bold">Cart</h2>
-    <hr class="border-theme-grayish-blue/30 mb-6" />
+    <h2 class="mb-7 px-6 font-bold text-theme-very-dark-blue">Cart</h2>
+    <hr class="mb-6 border-theme-grayish-blue/30" />
     <div
       v-if="cartContents.length === 0"
-      class="text-theme-dark-grayish-blue px-6 py-16 text-center font-semibold"
+      class="px-6 py-16 text-center font-semibold text-theme-dark-grayish-blue"
       aria-label="Your shopping cart is currently empty"
     >
       Your cart is empty.
@@ -50,7 +50,7 @@ const emit = defineEmits(["close"]);
         />
         <div class="flex-1">
           <p class="text-theme-dark-grayish-blue">{{ product(item.id)?.name }}</p>
-          <div class="text-theme-grayish-blue flex items-center gap-1">
+          <div class="flex items-center gap-1 text-theme-grayish-blue">
             <span class="text-theme-dark-grayish-blue">${{ discountPrice(item) }}</span>
             <span class="text-theme-dark-grayish-blue">x</span>
             <span
@@ -58,7 +58,7 @@ const emit = defineEmits(["close"]);
               :aria-label="`Quantity of ${product(item.id)?.name}: {{ item.quantity }}`"
               >{{ item.quantity }}</span
             >
-            <span class="text-theme-very-dark-blue ml-2 font-bold">${{ totalPrice(item) }}</span>
+            <span class="ml-2 font-bold text-theme-very-dark-blue">${{ totalPrice(item) }}</span>
           </div>
         </div>
         <button
@@ -71,7 +71,7 @@ const emit = defineEmits(["close"]);
         </button>
       </div>
       <button
-        class="bg-theme-orange text-shadow-theme-very-dark-blue w-full rounded-lg py-4 font-bold transition hover:bg-orange-400"
+        class="w-full rounded-lg bg-theme-orange py-4 font-bold transition text-shadow-theme-very-dark-blue hover:bg-orange-400"
         type="button"
         @click="emptyCart"
         :aria-label="`Proceed to checkout (${cartContents.length} item${cartContents.length !== 1 ? 's' : ''})`"

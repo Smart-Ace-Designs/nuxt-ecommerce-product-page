@@ -17,7 +17,7 @@ defineEmits(["close"]);
           :to="item.href"
           :aria-label="`Navigate to ${item.label} section`"
           @click="$emit('close')"
-          class="text-theme-very-dark-blue text-md hover:text-theme-orange font-semibold transition-colors duration-300 ease-in-out"
+          class="text-md font-semibold text-theme-very-dark-blue transition-colors duration-300 ease-in-out hover:text-theme-orange"
         >
           {{ item.label }}
         </NuxtLink>

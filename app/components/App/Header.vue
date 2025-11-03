@@ -14,7 +14,7 @@ function toggleMobileMenu() {
 
 <template>
   <header
-    class="sm:border-theme-grayish-blue/30 relative mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:mb-12 sm:border-b lg:px-0"
+    class="relative mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:mb-12 sm:border-b sm:border-theme-grayish-blue/30 lg:px-0"
   >
     <div class="flex gap-4 md:gap-14">
       <button
@@ -43,7 +43,7 @@ function toggleMobileMenu() {
         <img src="/icon-cart.svg" alt="Cart" />
         <span
           v-if="cartCounter > 0"
-          class="bg-theme-orange absolute -right-2 -top-2 rounded-full px-2 text-[10px] text-white"
+          class="absolute -top-2 -right-2 rounded-full bg-theme-orange px-2 text-[10px] text-white"
           aria-label="Items in cart"
         >
           {{ cartCounter }}
@@ -52,12 +52,12 @@ function toggleMobileMenu() {
       <img
         src="/image-avatar.png"
         alt="User avatar"
-        class="hover:border-theme-orange transition-color size-7 cursor-pointer rounded-full border-2 border-transparent duration-300 md:size-14"
+        class="transition-color size-7 cursor-pointer rounded-full border-2 border-transparent duration-300 hover:border-theme-orange md:size-14"
         aria-label="User profile"
       />
       <div
         v-if="showCart"
-        class="absolute left-1/2 top-full z-10 mt-3 -translate-x-1/2 sm:left-auto sm:right-2 sm:-mt-3 sm:translate-x-0 lg:right-0 xl:-right-20"
+        class="absolute top-full left-1/2 z-10 mt-3 -translate-x-1/2 sm:right-2 sm:left-auto sm:-mt-3 sm:translate-x-0 lg:right-0 xl:-right-20"
         id="cart-panel"
         role="dialog"
         aria-modal="true"

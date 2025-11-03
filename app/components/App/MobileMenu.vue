@@ -8,12 +8,12 @@ defineEmits(["close"]);
       role="dialog"
       aria-modal="true"
       aria-labelledby="mobile-menu-title"
-      class="bg-theme-white absolute left-0 top-0 z-10 h-screen w-2/3 p-6"
+      class="absolute top-0 left-0 z-10 h-screen w-2/3 bg-theme-white p-6"
       tabindex="-1"
     >
       <h2 id="mobile-menu-title" class="sr-only">Mobile navigation menu</h2>
       <button
-        class="absolute left-6 top-6 cursor-pointer"
+        class="absolute top-6 left-6 cursor-pointer"
         type="button"
         @click="$emit('close')"
         aria-label="Close navigation menu"

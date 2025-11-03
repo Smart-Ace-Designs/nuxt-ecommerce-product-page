@@ -28,7 +28,7 @@ const updateCartContents = (id: number) => {
 <template>
   <div class="flex flex-col gap-4 lg:flex-row">
     <div
-      class="bg-theme-light-grayish-blue flex w-full items-center justify-between gap-3 rounded-lg py-1 lg:w-36"
+      class="flex w-full items-center justify-between gap-3 rounded-lg bg-theme-light-grayish-blue py-1 lg:w-36"
       role="group"
       aria-label="Quantity selector"
     >
@@ -42,7 +42,7 @@ const updateCartContents = (id: number) => {
       >
         <img src="/icon-minus.svg" alt="" />
       </button>
-      <span class="text-theme-very-dark-blue font-bold" aria-live="polite">{{
+      <span class="font-bold text-theme-very-dark-blue" aria-live="polite">{{
         cartIncrementAmount
       }}</span>
       <button
@@ -67,14 +67,14 @@ const updateCartContents = (id: number) => {
       :class="[
         cartIncrementAmount === 0
           ? 'cursor-not-allowed'
-          : 'hover:bg-theme-orange/80 cursor-pointer',
-        'bg-theme-orange text-shadow-theme-very-dark-blue text-theme-very-dark-blue flex items-center justify-center gap-4 rounded-lg px-4 py-4 font-black transition-colors duration-200 lg:px-20',
+          : 'cursor-pointer hover:bg-theme-orange/80',
+        'flex items-center justify-center gap-4 rounded-lg bg-theme-orange px-4 py-4 font-black text-theme-very-dark-blue transition-colors duration-200 text-shadow-theme-very-dark-blue lg:px-20',
       ]"
       :aria-label="`Add ${cartIncrementAmount} item${cartIncrementAmount !== 1 ? 's' : ''} to cart`"
       :aria-disabled="cartIncrementAmount === 0"
     >
       <svg
-        class="fill-theme-very-dark-blue size-4"
+        class="size-4 fill-theme-very-dark-blue"
         viewBox="0 0 22 20"
         xmlns="http://www.w3.org/2000/svg"
       >
