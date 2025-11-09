@@ -19,4 +19,13 @@ export default defineNuxtConfig({
     },
   },
   modules: ["@nuxt/fonts"],
+  fonts: {
+    families: [
+      {
+        name: "Kumbh Sans",
+        provider: "google",
+        weights: ["100 900"],
+      },
+    ],
+  },
 });
