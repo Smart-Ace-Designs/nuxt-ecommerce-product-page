@@ -24,7 +24,11 @@ export default defineNuxtConfig({
       {
         name: "Kumbh Sans",
         provider: "google",
-        weights: ["100 900"],
+        weights: [400, 500, 600, 700, 900],
+        styles: ["normal"],
+        subsets: ["latin"],
+        preload: true,
+        display: "swap",
       },
     ],
   },
