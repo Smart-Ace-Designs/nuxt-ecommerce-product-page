@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import navItems from "@@/data/navitems.json";
+const route = useRoute();
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import navItems from "@@/data/navitems.json";
         <NuxtLink
           :to="item.href"
           class="text-md font-medium text-theme-dark-grayish-blue transition-colors duration-300 ease-in-out group-hover:text-theme-orange"
-          :aria-current="useRoute().path === item.href ? 'page' : undefined"
+          :aria-current="route.path === item.href ? 'page' : undefined"
         >
           {{ item.label }}
         </NuxtLink>
