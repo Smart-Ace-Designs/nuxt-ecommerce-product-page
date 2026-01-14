@@ -5,6 +5,7 @@ useState("cartContents", (): CartItem[] => []);
 
 <template>
   <NuxtRouteAnnouncer />
+  <NuxtLoadingIndicator />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
