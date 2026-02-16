@@ -27,7 +27,7 @@ const emit = defineEmits(["close"]);
 
 <template>
   <div
-    class="w-[360px] rounded-xl bg-white pt-4 pb-8 shadow-xl"
+    class="w-90 rounded-xl bg-white pt-4 pb-8 shadow-xl"
     role="dialog"
     aria-label="Shopping Cart"
     tabindex="-1"

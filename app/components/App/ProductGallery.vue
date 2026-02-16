@@ -16,7 +16,7 @@ const isOpen = ref<boolean>(false);
         :src="`/image-product-${selectedImage}.jpg`"
         :alt="`${productName || 'Sneaker Product'} - image ${selectedImage}`"
         :aria-label="`Main product image ${selectedImage} of 4`"
-        class="pointer-events-none h-[300px] w-full object-cover hover:cursor-pointer sm:pointer-events-auto sm:rounded-2xl lg:h-[445px]"
+        class="pointer-events-none h-75 w-full object-cover hover:cursor-pointer sm:pointer-events-auto sm:rounded-2xl lg:h-111.25"
       />
       <button
         class="absolute top-1/2 left-4 flex size-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-white p-2 hover:fill-theme-orange sm:hidden"
