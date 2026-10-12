@@ -3,9 +3,9 @@
     "*.css": "tailwindcss",
     "*.scss": "tailwindcss"
   },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "tailwindCSS.classAttributes": ["class", "ui"],
-  "tailwindCSS.experimental.classRegex": [["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]]
+  "tailwindCSS.classAttributes": ["active-class", "class", "inactive-class", "ui"],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["bodyAttrs:\\s*{[^}]*class:\\s*['\"`]([^'\"`]*)['\"`]", "([^ ]*)"]
+  ]
 }
