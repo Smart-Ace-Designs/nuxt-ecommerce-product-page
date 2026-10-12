@@ -943,13 +943,13 @@
 
     "postcss-merge-longhand": ["postcss-merge-longhand@9.4.0", "", { "dependencies": { "@csstools/css-tokenizer": "^4.0.2", "browserslist": "^4.29.3", "cssnano-utils": "^9.0.0", "stylehacks": "^9.0.8" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-FZqaPk9Frs6Ecxpeeb303N8DGAeYF3TpLG01mYQ1ws9FVVisQJqqHomoEmXvaEyrNyANZaHCAR5ShA1r/chM1Q=="],
 
-    "postcss-merge-rules": ["postcss-merge-rules@9.1.4", "", { "dependencies": { "@csstools/css-tokenizer": "^4.0.2", "browserslist": "^4.29.3", "caniuse-api": "^4.0.0", "cssnano-utils": "^9.0.0", "postcss-minify-selectors": "^9.0.8" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-kAOfOrkLUDvBztxI8RG1ZLe5SwUs3rinFXnqdh4sPrYPz9P9FZbXNQ6XVtQKlhCvuqvR0HyrronV503u9jbxxA=="],
+    "postcss-merge-rules": ["postcss-merge-rules@9.1.5", "", { "dependencies": { "@csstools/css-tokenizer": "^4.0.2", "browserslist": "^4.29.3", "caniuse-api": "^4.0.0", "cssnano-utils": "^9.0.0", "postcss-minify-selectors": "^9.0.8" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-URhX03eaZ1lwYS+A573lNCsioCd6kNUkJUYXSq30uYDmRKSI+3FfR3a4c0lNqmYkgBPFzI8bY94QPdoQh5zNeA=="],
 
     "postcss-minify-font-values": ["postcss-minify-font-values@9.0.9", "", { "dependencies": { "@csstools/css-tokenizer": "^4.0.2", "cssnano-utils": "^9.0.0" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-eJkOtHU/zZWJJ7c1MWgalpACGV0sERvtowpWDrgr9Ys0seX5vFBx9pWLOrN8eYO2TIOfMvatMhvgtGKtre1gsg=="],
 
     "postcss-minify-gradients": ["postcss-minify-gradients@9.0.8", "", { "dependencies": { "@colordx/core": "^7.3.0", "@csstools/css-tokenizer": "^4.0.2", "cssnano-utils": "^9.0.0" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-3xGO5lvhSz5m60ElGvU8HJYt0XmYpFkJ+HDK8CYoRvwdmQIjhurClan2z4lDEVkYpeKfrc5dNWIYKie01xhpng=="],
 
-    "postcss-minify-params": ["postcss-minify-params@9.0.8", "", { "dependencies": { "browserslist": "^4.29.3", "cssnano-utils": "^9.0.0" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-DZNhq6Lz9i4EOiuImFBqldE6XUXFvEKSA2wQnn539c24naj/Ia2Qn1QVf56bva+UiMYurM1sn217yaap+pQBYQ=="],
+    "postcss-minify-params": ["postcss-minify-params@9.1.0", "", { "dependencies": { "browserslist": "^4.29.3", "cssnano-utils": "^9.0.0" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-czaf0nUl7mKq1cpMUZ29rQ/2p5zE4TvszK+OkaaaiWuzLhyeaT9qvxxEgO2aNog8eQxCKD1oV6dX6NroAaOAaw=="],
 
     "postcss-minify-selectors": ["postcss-minify-selectors@9.0.8", "", { "dependencies": { "browserslist": "^4.29.3", "caniuse-api": "^4.0.0", "cssnano-utils": "^9.0.0" }, "peerDependencies": { "postcss": "^8.5.29" } }, "sha512-qMeQvr3ODymnvoDSwml4uTWufma0T2FhRxce4htQ+45otzsm1QyNAg98DXGrawVpGooU2vElaBd8qI+YCwF0UQ=="],
 
