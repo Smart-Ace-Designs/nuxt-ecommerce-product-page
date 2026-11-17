@@ -15,10 +15,10 @@
     "nuxt": "^4.6.4",
     "tailwindcss": "^4.3.5",
     "vue": "^3.5.45",
-    "vue-router": "^5.4.0"
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.1",
     "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
