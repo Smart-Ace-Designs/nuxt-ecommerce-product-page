@@ -18,10 +18,8 @@
     "vue-router": "^5.5.1"
   },
   "devDependencies": {
+    "@nuxt/devtools": "^4.2.1",
     "prettier": "^3.10.1",
     "prettier-plugin-tailwindcss": "^0.8.1"
-  },
-  "overrides": {
-    "@nuxt/devtools": "^4.2.0"
   }
 }
